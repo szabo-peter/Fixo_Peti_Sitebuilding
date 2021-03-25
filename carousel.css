@@ -8,6 +8,8 @@ body {
       rgba(50, 58, 69, 0.5)
     ),
     url(pics/bodybg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .bg-rendeles {
   margin: 0;
@@ -19,6 +21,8 @@ body {
     ),
     url(pics/shop1.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .card {
@@ -107,12 +111,24 @@ body {
   border-radius: 20px;
 }
 
-.card-img-top:hover {
-  background-color: rgb(0, 0, 0);
-  border-radius: 50px;
+.card-img-top1 {
+  border-radius: 10px;
 }
-.card-body:hover {
+
+.card-body1:hover {
   background-color: rgb(36, 36, 36);
   color: rgb(255, 255, 255);
-  border-radius: 20px;
+  border-radius: 6px;
+}
+.zoom {
+  transition: transform 0.2s;
+  width: 100px;
+  height: 100px;
+}
+.zoom:hover {
+  transform: scale(0.9);
+}
+
+.x {
+  margin-bottom: 400px;
 }
