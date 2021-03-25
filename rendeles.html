@@ -162,9 +162,16 @@
               </div>
               
               <div class="d-grid gap-2 col-2 mx-auto m-4">
-                <button class="btn btn-primary" type="submit">🛒 Rendelés leadása</button>
+                <button class="btn btn-primary" type="submit" onclick="clickFunction()">🛒 Rendelés leadása</button>
               </div>
-            </div>
+			<script>
+			function clickFunction() {
+			let agree=confirm("Biztos meg akarod rendelni?");
+				if (agree) return true ;
+				else return false ;
+							
+			}
+			</script>
   </main>
 
 <hr class="featurette-divider">
