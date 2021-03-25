@@ -1,0 +1,44 @@
+.album1 {
+    padding-bottom: 3rem;
+    margin: 0;
+    line-height: 20px;
+    background-image: linear-gradient(180deg, rgba(50,58,69,0.70), rgba(50,58,69,0.74)), url(./album1/4.jpg);
+  }
+.album2 {
+    padding-bottom: 3rem;
+    margin: 0;
+    line-height: 20px;
+    background-image: linear-gradient(180deg, rgba(50,58,69,0.70), rgba(50,58,69,0.74)), url(./album2/3.jpg);
+  }
+.album3 {
+    padding-bottom: 3rem;
+    margin: 0;
+    line-height: 20px;
+    background-image: linear-gradient(180deg, rgba(50,58,69,0.70), rgba(50,58,69,0.74)), url(./album3/7.jpg);  
+}
+.album4 {
+    padding-bottom: 3rem;
+    margin: 0;
+    line-height: 20px;
+    background-image: linear-gradient(180deg, rgba(50,58,69,0.70), rgba(50,58,69,0.74)), url(./album4/7.jpg);
+  }
+.album5 {
+    padding-bottom: 3rem;
+    margin: 0;
+    line-height: 20px;
+    background-image: linear-gradient(180deg, rgba(50,58,69,0.70), rgba(50,58,69,0.74)), url(./album3/8.jpg);
+  }
+  
+
+.fw-light {
+    color: white;
+    font-size: 70px;
+}
+.lead {
+    color: white;
+    font-size: 30px;
+}
+.ps {
+    font-size: 20px;
+    color: white;
+  }

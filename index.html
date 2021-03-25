@@ -6,11 +6,10 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.80.0">
-    <title>Carousel Template · Bootstrap v5.0</title>
+    <title>PhotoRender F&P - HomePage</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
-
-    
+    <link href="carousel.css" rel="stylesheet">
 
     <!-- Bootstrap core CSS -->
     <link href="./bootstrap.min.css" rel="stylesheet">
@@ -30,46 +29,44 @@
         }
       }
     </style>
-
-    
-    <!-- Custom styles for this template -->
-    <link href="./carousel.css" rel="stylesheet">
   </head>
   <body>
-    
-<header>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">PhotoRender</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Főoldal</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Rendelés</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Albumok</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Kapcsolat</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Keresés</button>
-        </form>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <img src="./pics/kislogo2.png" alt="">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">🏡 Főoldal</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                📷 Albumok
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./album1.html">Természetfotók</a></li>
+              <li><a class="dropdown-item" href="./album2.html">Autók</a></li>
+              <li><a class="dropdown-item" href="./album3.html">Hátterek</a></li>
+              <li><a class="dropdown-item" href="./album4.html">Termékfotók</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rendeles.html">🛒 Rendelés</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kapcsolat.html">📞 Kapcsolat</a>
+            </li>
+          </ul>
+          
+        </div>
       </div>
-    </div>
-  </nav>
-</header>
+    </nav>
 
 <main>
-
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -78,37 +75,31 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="./pics/DSC_0014.jpg" alt="">
-
+        <img src="./pics/1.jpg" alt="">
         <div class="container">
           <div class="carousel-caption text-start">
-            <h1>Legjobb képek...</h1>
-            <p>Több fotós album egy helyen</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Rendelés most</a></p>
+            <h1>Egyedi képek, profi minőségben!</h1>
+            <p>Több kategória is egy helyen!</p>
           </div>
         </div>
       </div>
 
       <div class="carousel-item">
-        <img src="./pics/DSC_0161.jpg" alt="">
-
+        <img src="./pics/2.jpg" alt="">
         <div class="container">
           <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Rendelés most</a></p>
+            <h1>Vidd otthonodba a legszebb pillanatokat!</h1>
+            <p>Már csak egy lépésre vagy...</p>
           </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="./pics/DSC_1682.jpg" alt="">
-        
 
+      <div class="carousel-item">
+        <img src="./pics/3.jpg" alt="">
         <div class="container">
           <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Rendelés most</a></p>
+            <h1>Válassz és Rendelj</h1>
+            <p>a legszebb képek közül, a kedvenc témádban!</p>
           </div>
         </div>
       </div>
@@ -123,69 +114,63 @@
     </button>
   </div>
 
-
-  <!-- Marketing messaging and featurettes
-  ================================================== -->
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-
-  <section class="cikkek">
+  <section class="albumok">
     <div class="container">
            <div class="row">
-            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 p-2">
-               <div class="card" style="width: 16rem;">
-                   <img class="img-fluid card-img-top" src="./pics/nature.jpg" alt="Card image cap">
+           <div class="col-sm-3 p-2">
+               <div class="card" style="width: 18rem;">
+                   <img class="card-img-top" src="./pics/nature.jpg" alt="Card image cap">
                    <div class="card-body">
-                     <h5 class="card-title">Card title</h5>
-                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                     <a href="#" class="btn btn-primary">Tovább</a>
+                     <h5 class="card-title">Természetfotók</h5>
+                     <p class="card-text">Olyan pillanatok, amikről sokszor lemaradnánk!</p>
+                     <a href="./album1.html" class="btn btn-primary">Tovább</a>
                    </div>
                  </div>
            </div>
-           <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 p-2">
-               <div class="card" style="width: 16rem;">
-                   <img class="img-fluid card-img-top" src="./pics/portfolio.jpg" alt="Card image cap">
+           <div class="col-sm-3 p-2">
+               <div class="card" style="width: 18rem;">
+                   <img class="card-img-top" src="./pics/cars.jpg" alt="Card image cap">
                    <div class="card-body">
-                     <h5 class="card-title">Card title</h5>
-                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                     <a href="#" class="btn btn-primary">Tovább</a>
+                     <h5 class="card-title">Autók</h5>
+                     <p class="card-text">Képes gyűjtemény az autók szerelmeseinek!</p>
+                     <a href="./album2.html" class="btn btn-primary">Tovább</a>
                    </div>
                  </div>
            </div>
-           <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 p-2">
-               <div class="card " style="width: 16rem;">
-                   <img class="img-fluid card-img-top" src="./pics/product.jpg" alt="Card image cap">
+           <div class="col-sm-3 p-2">
+               <div class="card " style="width: 18rem;">
+                   <img class="card-img-top" src="./pics/wallpaper.jpg" alt="Card image cap">
                    <div class="card-body">
-                     <h5 class="card-title">Card title</h5>
-                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                     <a href="#" class="btn btn-primary">Tovább</a>
+                     <h5 class="card-title">Hátterek</h5>
+                     <p class="card-text">Háttérgyűjtemény, ha már unnnád a jelenlegi wallpapert!</p>
+                     <a href="./album3.html" class="btn btn-primary">Tovább</a>
                    </div>
                  </div>
            </div>
-           <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 p-2">
-              <div class="card " style="width: 16rem;">
-                   <img class="img-fluid card-img-top" src="./pics/BMW 420.jpg" alt="Card image cap">
+           <div class="col-sm-3 p-2">
+               <div class="card " style="width: 18rem;">
+                   <img class="card-img-top" src="./pics/product.jpg" alt="Card image cap">
                    <div class="card-body">
-                     <h5 class="card-title">Card title</h5>
-                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                     <a href="#" class="btn btn-primary">Tovább</a>
+                     <h5 class="card-title">Termékfotók</h5>
+                     <p class="card-text">Pár érdekes téma, különböző felhozatalban!</p>
+                     <a href="./album4.html" class="btn btn-primary">Tovább</a>
                    </div>
                  </div>
            </div>
        </div>
    </div>
 </section>
-
+<hr class="featurette-divider">
 
   <!-- FOOTER -->
   <footer class="container">
-    <p class="float-end"><a href="#">Back to top</a></p>
-    <p>&copy; FIXO - PETI 2021 Flow Academy, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    <p class="float-end"><a href="#" class="btn btn-primary my-2">FEL!</a></p>
+    <p class="ps">&copy; Designed by: FIXO - PETI 2021, Flow Academy, All rights reserved!</p>
   </footer>
 </main>
 
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="../assets/dist/js/bootstrap.min.css"></script>
 
-      
   </body>
 </html>
